@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acara Praktikum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">SeaVoyage</a>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="acara.html" class="active">Acara Praktikum</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="acara-hero">
+        <h1>Acara Praktikum</h1>
+        <p>Selamat datang di halaman acara praktikum. Temukan acara-acara seru yang kami selenggarakan di sini!</p>
+    </section>
+
+    <section class="acara-list">
+        <!-- Acara 1 dengan Detail Expandable -->
+        <div class="acara-item" data-aos="fade-up">
+            <h2 onclick="toggleDetail('detail1')" class="clickable">Acara 1: Align Data CTD Menggunakan SBE Data Processing</h2>
+            <div id="detail1" class="acara-detail">
+                <img src="images/acara1_detail.jpg" alt="Eksplorasi Laut">
+                <p>Kegiatan eksplorasi laut bersama tim ilmuwan. Dalam acara ini, peserta akan diajak untuk mempelajari ekosistem laut, mengidentifikasi organisme laut, serta memahami teknik penyelamatan lingkungan laut.</p>
+            </div>
+        </div>
+
+        <!-- Acara 2 -->
+        <div class="acara-item" data-aos="fade-up" data-aos-delay="200">
+            <h2 onclick="toggleDetail('detail2')" class="clickable">Acara 2: Bin Average CTD Menggunakan SBE Data Processing</h2>
+            <div id="detail2" class="acara-detail">
+                <img src="images/acara2_detail.jpg" alt="Penelitian Ekosistem">
+                <p>Belajar tentang ekosistem laut melalui penelitian langsung. Acara ini akan membahas proses pemetaan habitat laut serta pengaruh lingkungan terhadap keberlanjutan spesies laut.</p>
+            </div>
+        </div>
+
+        <!-- Acara 3 -->
+        <div class="acara-item" data-aos="fade-up" data-aos-delay="400">
+            <h2 onclick="toggleDetail('detail3')" class="clickable">Acara 3: Visualisasi Data CTD Menggunakan SBE Data Processing, Microsoft Excel. dan ODV</h2>
+            <div id="detail3" class="acara-detail">
+                <img src="images/acara3_detail.jpg" alt="Konservasi Terumbu Karang">
+                <p>Aktivitas konservasi terumbu karang di laut sekitar. Pelajari pentingnya terumbu karang dan cara menjaga ekosistemnya.</p>
+            </div>
+        </div>
+
+        <!-- Acara 4 -->
+        <div class="acara-item" data-aos="fade-up" data-aos-delay="400">
+            <h2 onclick="toggleDetail('detail4')" class="clickable">Acara 4: Visualisasi Data Nutrien Terhadap Suhu, Salinitas, dan Oksigen</h2>
+            <div id="detail4" class="acara-detail">
+                <img src="images/acara4_detail.jpg" alt="Konservasi Terumbu Karang">
+                <p>Aktivitas konservasi terumbu karang di laut sekitar. Pelajari pentingnya terumbu karang dan cara menjaga ekosistemnya.</p>
+            </div>
+        </div>
+
+        <!-- Acara 5 -->
+        <div class="acara-item" data-aos="fade-up" data-aos-delay="400">
+            <h2 onclick="toggleDetail('detail5')" class="clickable">Acara 5: Visualisasi Diagram T-S</h2>
+            <div id="detail5" class="acara-detail">
+                <img src="images/acara5_detail.jpg" alt="Konservasi Terumbu Karang">
+                <p>Aktivitas konservasi terumbu karang di laut sekitar. Pelajari pentingnya terumbu karang dan cara menjaga ekosistemnya.</p>
+            </div>
+        </div>
+
+        <!-- Acara 6 -->
+        <div class="acara-item" data-aos="fade-up" data-aos-delay="400">
+            <h2 onclick="toggleDetail('detail6')" class="clickable">Acara 6: Diagram T-S Terhadap Nitrat, Fosfat, dan Oksigen</h2>
+            <div id="detail6" class="acara-detail">
+                <img src="images/acara6_detail.jpg" alt="Konservasi Terumbu Karang">
+                <p>Aktivitas konservasi terumbu karang di laut sekitar. Pelajari pentingnya terumbu karang dan cara menjaga ekosistemnya.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SeaVoyage</p>
+    </footer>
+
+    <!-- Library AOS (Animate on Scroll) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Function to toggle visibility of detail sections
+        function toggleDetail(id) {
+            const detailElement = document.getElementById(id);
+            detailElement.style.display = detailElement.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

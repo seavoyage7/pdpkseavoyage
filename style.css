@@ -1,0 +1,330 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #002147;
+    padding: 20px 0;
+}
+
+.navbar .logo{
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.brand h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Menu Navigasi */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #3a5fcd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a.active {
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+.nav-links a:hover {
+    background-color: #1f3a93;
+}
+
+/* Hero Section */
+.hero {
+    background: url('webcam-toy-photo29.jpg') center center/cover no-repeat;
+    display: flex;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* efek transparansi */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* Klikable H2 (judul acara) */
+.clickable {
+    cursor: pointer;
+    color: #003366;
+    transition: color 0.3s;
+}
+
+.clickable:hover {
+    color: #0055aa;
+}
+
+.acara-hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.acara-hero p {
+    font-size: 18px;
+}
+
+/* Daftar Acara */
+.acara-list {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.acara-item {
+    width: 100%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.acara-item:hover {
+    transform: translateY(-10px);
+}
+
+.acara-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 4px solid #003366;
+}
+
+.acara-item h2 {
+    font-size: 24px;
+    cursor: pointer;
+    color: #003366;
+    margin: 15px;
+}
+
+.acara-item p {
+    padding: 0 15px 15px;
+    color: #666;
+}
+
+
+/* Style untuk detail acara yang bisa digulung */
+.acara-detail {
+    display: none; /* Tersembunyi secara default */
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.acara-detail img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.acara-detail p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.btn-learn-more {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #3a5fcd;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-learn-more:hover {
+    background-color: #1f3a93;
+}
+
+/* Styling Tombol Kembali ke Atas */
+.btn-back-to-top {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.btn-back-to-top:hover {
+    background-color: #0055aa;
+}
+
+
+
+/* Styling Bagian About Us */
+.about-us-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.about-us-section h2 {
+    color: #003366;
+    font-size: 2.5cm;
+    margin-bottom: 20px;
+}
+
+.about-us-section p {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.about-us-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us-section ul li {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Container untuk anggota menggunakan flexbox */
+.team-container {
+    display: flex;
+    justify-content: space-between; /* Menyusun anggota secara berjajar */
+    flex-wrap: wrap; /* Membuat anggota pindah baris jika layar sempit */
+    gap: 20px;
+}
+
+/* Card Anggota */
+.team-member {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Hover Effect */
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .team-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    }
+}
+
+@media (max-width: 480px) {
+    .team-container {
+        grid-template-columns: 1fr; /* 1 kolom */
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #002147;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* Animasi */
+[data-aos] {
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+}
+
+
